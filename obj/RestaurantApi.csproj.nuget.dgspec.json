@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj": {}
+    "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj": {}
   },
   "projects": {
-    "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj": {
+    "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj",
+        "projectUniqueName": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj",
         "projectName": "RestaurantApi",
-        "projectPath": "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj",
-        "packagesPath": "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurs\\RestaurantApi\\obj\\",
+        "projectPath": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj",
+        "packagesPath": "C:\\Users\\ACEREK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mafisto CHEF\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ACEREK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,6 +58,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.3, )"
             }
           },
           "imports": [

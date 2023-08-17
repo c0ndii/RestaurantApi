@@ -3,10 +3,13 @@ using RestaurantApi.Entities;
 using RestaurantApi;
 using System.Reflection;
 using RestaurantApi.Services;
-
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
 // Add services to the container.
 
 builder.Services.AddControllers();
