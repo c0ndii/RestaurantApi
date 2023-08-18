@@ -9,6 +9,7 @@ namespace RestaurantApi
         {
             if (_context.Database.CanConnect())
             {
+                
                 if (!_context.Restaurants.Any())
                 {
                     var restaurants = GetRestaurants();

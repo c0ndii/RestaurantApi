@@ -6,7 +6,7 @@ namespace RestaurantApi.Entities
     public class RestaurantDbContext : DbContext
     {
         private string _ConnectionString = 
-            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            "Data Source=(localdb)\\MSSQLLocalDB;Database=RestaurantDB;Trusted_Connection=True";
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Dish> Dishes { get; set; }
