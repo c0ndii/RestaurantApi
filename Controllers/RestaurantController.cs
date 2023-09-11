@@ -20,11 +20,10 @@ namespace RestaurantApi.Controllers
             _restaurantservice = restaurantService;
         }
         [HttpGet]
-        //[Authorize(Policy = "Atleast20")]
         [Authorize(Policy = "RestaurantCount")]
-        public ActionResult<IEnumerable<Restaurant>> GetAll()
+        public ActionResult<IEnumerable<Restaurant>> GetAll([FromQuery]RestaurantQuery query)
         {
-            var restaurants = _restaurantservice.GetAll();
+            var restaurants = _restaurantservice.GetAll(query);
             return Ok(restaurants);
         }
         [HttpGet("{id}")]
