@@ -68,10 +68,20 @@ builder.Services.AddScoped<IValidator<RestaurantQuery>, RestaurantQueryValidator
 builder.Services.AddScoped<RequestTimeMiddleware>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontEndClient", builder =>
+    {
+        builder.AllowAnyMethod()
+        .AllowAnyHeader()
+        .WithOrigins("http://localhost:8080");
+    });
+});
 
 
 var app = builder.Build();
 var scope = app.Services.CreateScope();
+app.UseCors(builder.Configuration["AllowedOrigins"]);
 var seeder = scope.ServiceProvider.GetRequiredService<RestaurantSeeder>();
 seeder.Seed();
 // Configure the HTTP request pipeline.
