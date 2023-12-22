@@ -4216,19 +4216,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACEREK\\.nuget\\packages\\": {}
+    "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\": {},
+    "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj",
+      "projectUniqueName": "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj",
       "projectName": "RestaurantApi",
-      "projectPath": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\RestaurantApi.csproj",
-      "packagesPath": "C:\\Users\\ACEREK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACEREK\\Documents\\GitHub\\RestaurantApi\\obj\\",
+      "projectPath": "D:\\Kurs\\RestaurantApi\\RestaurantApi.csproj",
+      "packagesPath": "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\",
+      "outputPath": "D:\\Kurs\\RestaurantApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ACEREK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mafisto CHEF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4236,7 +4241,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4309,7 +4313,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
